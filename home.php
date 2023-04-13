@@ -19,9 +19,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="image/admin-login-img.png" alt="admin login not found">
+                    <img src="image/student-login.png" alt="admin login not found">
                 </div>
-
 
                 <div class="col-md-6">
                     <div class="admin_login_form">
