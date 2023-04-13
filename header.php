@@ -29,10 +29,9 @@
                 <div class="col-md-10 d-flex justify-content-end">
                     <div class="sing-up">
                      <ul>
-                        <li><a href="home.php">Home</a></li>
+                        <li class='actives'><a href="home.php">Home</a></li>
                         <li><a href="Sing-up.php">Sing Up</a></li>
                         <li><a href="admin-login.php">Admin Login</a></li>
-                       
                      </ul>
                     </div>
                 </div>

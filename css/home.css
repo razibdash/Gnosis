@@ -9,7 +9,7 @@
     text-align: center;
 }
 .header .logo span{
-    color: black;
+    color: #00abf9;
    font-size: 40px;
 }
 .header .logo a{
@@ -17,6 +17,7 @@
 }
 .header .sing-up{
     text-align: center;
+    margin-top: 5px;
 
 }
 .header .sing-up ul{
@@ -29,11 +30,16 @@
 .header .sing-up ul li a{
     text-decoration: none;
     color: black;
-    font-size: 24px;
+    font-size: 18px;
     padding: 13px;
+    font-weight: 500;
 }
 .header .sing-up ul li a:hover{
-    color: antiquewhite;
+    color: #00cd93;
+}
+.header .sing-up .actives a{
+    color: #00cd93;
+    font-weight: 600;
 }
 /*studen_admin_login*/
 .studen_admin_login{
