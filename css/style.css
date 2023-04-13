@@ -5,6 +5,9 @@
 img{
     max-width: 100%;
 }
+body{
+    min-height: 100%;
+}
 
 .admin_login_form .submit-btn {
     background-color: #00cd93;
@@ -23,35 +26,37 @@ img{
 
 /*admin Dashboard part*/
 .admin {
- 
- 
-  padding: 0px;
-  background: rgb(65, 59, 59);
+  padding: 12px;
+  background: linear-gradient(0deg, #00abf9 0%, #00cd93 100%);
   color: white;
   height: 700px;
   border-radius: 10px;
+  min-height: 100%;
 }
-.manu ul{
+.admin .manu ul{
     list-style-type: none;
         margin: auto;
       
     
 }
-.manu ul li{
+.admin .manu ul li{
     margin-top: 20px;
 }
-.manu ul li a{
+.admin .manu ul li a i{
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.admin .manu ul li a{
     text-decoration: none;
     color: white;
     padding: 10px;
     display: block;
-    text-align: center;
     font-family: arial;
    transform:.5s ;
-   transition: .5s;
+   transition: .2s;
     
 }
-.dashboard
+.admin .dashboard
 {
     display: block;
     text-align: center;
@@ -63,13 +68,18 @@ img{
     padding: 10px;
 
 }
-.dashboard:hover{
+.admin .dashboard:hover{
     text-decoration: none;
     color: white;
 }
-.header .manu ul li a:hover{
+.admin .manu ul .actives {
     background: black;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.admin .manu ul li:hover{
+    background: black;
+    border-radius: 10px;
 }
 
 
