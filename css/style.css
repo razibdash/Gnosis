@@ -162,20 +162,8 @@ body{
     border-radius: 20px;
     color: black;
     text-align: center;
-}
-.card-body.issue-book-count  .title
-{
-    color: #dd3d0b;;
-}
-
-.card-body.issue-book-count  .icon  i
-{
-    color: #dd3d0b;;
-}
-.card-body.issue-book-count   .icon 
-{
-    background: #f7c7b9;
-
+    box-shadow: 0px 6px 2px #ddd;
+    
 }
 
 
