@@ -86,32 +86,95 @@ body{
 /* Admin dashboard part END*/
 
 /*Card part*/
-.book-count {
-    background: blanchedalmond;
+.card-body {
+    background: #fff5e1;
     margin-top: 41px;
     border-radius: 20px;
     color: black;
-    height: 150px;
     text-align: center;
-    box-shadow: 0px 6px 2px #ddd;
+    box-shadow: 0px 2px 23px #ddd;
+    cursor: crosshair;
+}
+.card-body.book-count h4 i
+{
+    color: #fca800;
+}
+.card-body .icon 
+{
+    border-radius: 100%;
+    padding: 12px;
+    width: 54px;
+}
+.card-body.book-count .icon 
+{
+    background: #fca8002b;
+    border-radius: 100%;
+    padding: 12px;
+    width: 54px;
+}
+.card-body.book-count .title  
+{
+    color: #fca800;
+}
+.card-body .card-text 
+{
+    text-align: right;
+    padding: 5px;
+    margin-right: 20px;
+}.card-body .title 
+{
+    font-weight: 600;
+    color: #7b7b79;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.card-body .count 
+{
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 2;
+    margin-top: -50px;
 }
 .student-count {
-    background: cadetblue;
+    background: #e0f8ea;
     margin-top: 41px;
     border-radius: 20px;
     color: black;
-    height: 150px;
     text-align: center;
-    box-shadow: 0px 6px 2px #ddd;
+}
+.card-body.student-count .title
+{
+    color: #00ca50;
+}
+.card-body.student-count .icon  i
+{
+    color: #00ca50;
+}
+.card-body.student-count  .icon 
+{
+    background: #b4edcc;
+
 }
 .issue-book-count {
-    background: darkgray;
+    background: #fdeae4;
     margin-top: 41px;
     border-radius: 20px;
     color: black;
-    height: 150px;
     text-align: center;
-    box-shadow: 0px 6px 2px #ddd;
+}
+.card-body.issue-book-count  .title
+{
+    color: #dd3d0b;;
+}
+
+.card-body.issue-book-count  .icon  i
+{
+    color: #dd3d0b;;
+}
+.card-body.issue-book-count   .icon 
+{
+    background: #f7c7b9;
+
 }
 
 
