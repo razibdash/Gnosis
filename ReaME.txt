@@ -1,0 +1,6 @@
+Icons:
+Used from bootstrap also FontAwsome
+
+Color:
+#00abf9
+#00cd93

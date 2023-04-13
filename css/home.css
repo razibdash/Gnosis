@@ -1,6 +1,6 @@
 .header{
     background: brown;
-    position: fixed;
+    position: relative;
     width: 100%;
 }
 .header .logo{
@@ -35,10 +35,7 @@
 }
 /*studen_admin_login*/
 .studen_admin_login{
-    background-image: url(../image/elibrary.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px;
+
 }
 
 /*student part*/
@@ -56,13 +53,14 @@
 
 /*Admin section*/
 .admin_login_form{
-    margin-top: 150px;
     background: darkslategray;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 0px 4px;
     color: white;
 }
-
+.login-icon-avater{
+    font-size: 50px;
+}
 
 /*Admin Section End*/
