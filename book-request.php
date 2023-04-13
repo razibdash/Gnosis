@@ -37,7 +37,7 @@
                <div class="admin-section">
                   <div class="container-fluid">
                     <div class="row">
-                     <div class="col-md-2">
+                     <div class="col-md-2 p-0">
                 <?php 
                 require_once("side_bar.php");
                 
