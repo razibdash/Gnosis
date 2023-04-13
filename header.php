@@ -21,12 +21,12 @@
 <div class="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <div class="logo">
                     <a href="home.php"><span><i class="fa-solid fa-book"></i>LMS</span></a>
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-10 d-flex justify-content-end">
                     <div class="sing-up">
                      <ul>
                         <li><a href="home.php">Home</a></li>

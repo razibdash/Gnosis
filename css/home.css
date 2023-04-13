@@ -1,13 +1,15 @@
 .header{
-    background: brown;
+    background: #f9f9f9;
     position: relative;
     width: 100%;
+    border-bottom: 2px solid #00cd93;
+    box-shadow: 0px -20px 73px #0eaff4;
 }
 .header .logo{
     text-align: center;
 }
 .header .logo span{
-    color: white;
+    color: black;
    font-size: 40px;
 }
 .header .logo a{
@@ -26,7 +28,7 @@
 }
 .header .sing-up ul li a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 24px;
     padding: 13px;
 }
@@ -53,14 +55,21 @@
 
 /*Admin section*/
 .admin_login_form{
-    background: darkslategray;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 0px 4px;
+    padding: 20px 60px;
     color: white;
+    background: linear-gradient(180deg, #00d2ff 0%, #3a47d5 100%);
+    height: 100%;
+    width: 100%;
+}
+.admin_login_form .studen{
+    text-align:center;
 }
 .login-icon-avater{
     font-size: 50px;
+}
+.admin_login_form .in-field {
+    border-radius: 100px;
+    padding: 10px 20px;
 }
 
 /*Admin Section End*/
