@@ -33,58 +33,51 @@
     
     ?>
     <div class="header">
-        <div class="container-fluid">
-        <div class="admin">
-        <a href="adminDashboard.php"><span><i class="fa-solid fa-book"></i> DASHBOARD</span></a>
-        </div>
-           <div class="admin-sextion">
-           <div class="row">
-                <div class="col-md-2">
-                    <div class="manu">
-                    <ul>
-                    <li><a href="add-new-book.php">Add book</a></li>
-                        <li><a href="book-list.php">Book List</a></li>
-                        <li><a href="student-info.php">Student Info</a></li>
-                        <li><a href="issue-book.php">Issue Book</a></li>
-                        <li><a href="book-request.php">Book Request</a></li>
-                        <li><a href="return-books.php">Return Books</a></li>
-                        <li><a href="home.php">LogOut</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-md-10">
-                 <div class="student-info-table">
+              <div class="admin">
+              <a href="adminDashboard.php"><span><i class="fa-solid fa-book"></i> DASHBOARD</span></a>
+             </div>
+               <div class="admin-section">
+                  <div class="container-fluid">
+                    <div class="row">
+                     <div class="col-md-2">
+                <?php 
+                require_once("side_bar.php");
+                
+                ?>
+            </div>
+            <div class="col-md-10">
+            <div class="student-info-table">
                     <h2>BOOK REQUEST</h2>
                     <div class="container mt-3">  
                     <?php 
-    $connect=mysqli_connect('localhost','root','','library');
-    $query="SELECT * FROM `add_book`";
+                        $connect=mysqli_connect('localhost','root','','library');
+                        $query="SELECT * FROM `add_book`";
 
-    $data_sharing=mysqli_query($connect,$query);
-    ?>
-    <table class="table table-hover">
-    <thead>
-    <tr>
-        <th>Serial No</th>
-        <th>Book Name</th>
-        <th>Book Picture</th>
-        <th>Author</th>
-        <th>Book Details</th>
-        <th>Action</th>
-    </tr>
-    </thead>
-<?php
-   $count=0;
-    while($row=mysqli_fetch_assoc($data_sharing))
-    {
-        
-        $bookName=$row['book_name'];
-        $picture=$row['book_picture'];
-        $author=$row['author'];
-        $bookDetail=$row['book-Detail'];
-        $count++;
-        ?>
-        <tbody>
+                        $data_sharing=mysqli_query($connect,$query);
+                        ?>
+                        <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>Serial No</th>
+                            <th>Book Name</th>
+                            <th>Book Picture</th>
+                            <th>Author</th>
+                            <th>Book Details</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                    <?php
+                    $count=0;
+                        while($row=mysqli_fetch_assoc($data_sharing))
+                        {
+                            
+                            $bookName=$row['book_name'];
+                            $picture=$row['book_picture'];
+                            $author=$row['author'];
+                            $bookDetail=$row['book-Detail'];
+                            $count++;
+                            ?>
+                            <tbody>
                         <tr>
                         <td><?php echo $count?></td>
                            
@@ -94,26 +87,24 @@
                             <td><?php echo $bookDetail?></td>
                            
                             <td><a href="student-delete.php?id=<?php echo $id ?>">Delete</a></td>
-                            <?php 
-                           
-                            
+                            <?php        
                             ?>
                         </tr>
                 </tbody>
- <?php    
-    }
-    
-    
-    
-    ?>        
+        <?php    
+    }  
+           ?>        
                     </table>
-                    </div>
-                 </div>
-              </div>
-              </div>
-        
-        </div>
-    </div>
 
+
+
+
+             
+            </div>
+        </div>
+       </div>
+    </div> 
+             
+       
  </body>
 </html>
