@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     <link rel="stylesheet" href="./css/admin-css.css">
+     <link rel="stylesheet" href="./css/style.css">
 
   </head>
   <body>
@@ -34,10 +34,8 @@
     ?>
     <div class="header">
         <div class="container-fluid">
-        <div class="admin">
-        <a href=""><span><i class="fa-solid fa-book"></i> DASHBOARD</span></a>
-        </div>
-           <div class="admin-sextion">
+        
+           <div class="admin-section">
            <div class="row">
                 <div class="col-md-2">
                 <?php
@@ -46,6 +44,7 @@
                 </div>
                 <div class="col-md-10">
                     <div class="row">
+                   
                       <div class="col-md-4">
                         <div class="card-body book-count">
                        <h4> <i class="fa-solid fa-book icon-dada"></i></h4>
@@ -92,8 +91,20 @@
                         </div>
                       </div>
                       <div class="col-md-4">
-                        <div class=" card-body issue-book-count"></div>
+                        <div class="card-body student-count">
+                          <h4><i class="fa-solid fa-bookmark"></i></h4>
+                          <h4>RETURN BOOKS</h4>
+                        </div>
                       </div>
+                      </div>
+                      <div class="row">
+                      <div class="col-md-12">
+                        <div class="graph">
+                          <img src="./image/graph.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                   
                     </div>
                 </div>
             </div>

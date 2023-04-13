@@ -10,16 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     <link rel="stylesheet" href="./css/admin-css.css">
-     <link rel="stylesheet" href="./css/add-new-book.css">
+    
+     <link rel="stylesheet" href="./css/style.css">
 
   </head>
   <body>
     <div class="header">
         <div class="container-fluid">
-        <div class="admin">
-        <a href="adminDashboard.php"><span><i class="fa-solid fa-book"></i> DASHBOARD</span></a>
-        </div>
            <div class="admin-section">
            <div class="row">
                 <div class="col-md-2">

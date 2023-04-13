@@ -20,3 +20,90 @@ img{
     display: flex;
     color: white;
 }
+
+/*admin Dashboard part*/
+.admin {
+ 
+ 
+  padding: 0px;
+  background: rgb(65, 59, 59);
+  color: white;
+  height: 700px;
+  border-radius: 10px;
+}
+.manu ul{
+    list-style-type: none;
+        margin: auto;
+      
+    
+}
+.manu ul li{
+    margin-top: 20px;
+}
+.manu ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    font-family: arial;
+   transform:.5s ;
+   transition: .5s;
+    
+}
+.dashboard
+{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 0px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+
+}
+.dashboard:hover{
+    text-decoration: none;
+    color: white;
+}
+.header .manu ul li a:hover{
+    background: black;
+    border-radius: 5px;
+}
+
+
+/* Admin dashboard part END*/
+
+/*Card part*/
+.book-count {
+    background: blanchedalmond;
+    margin-top: 41px;
+    border-radius: 20px;
+    color: black;
+    height: 150px;
+    text-align: center;
+    box-shadow: 0px 6px 2px #ddd;
+}
+.student-count {
+    background: cadetblue;
+    margin-top: 41px;
+    border-radius: 20px;
+    color: black;
+    height: 150px;
+    text-align: center;
+    box-shadow: 0px 6px 2px #ddd;
+}
+.issue-book-count {
+    background: darkgray;
+    margin-top: 41px;
+    border-radius: 20px;
+    color: black;
+    height: 150px;
+    text-align: center;
+    box-shadow: 0px 6px 2px #ddd;
+}
+
+
+
+/*Card part END*/
