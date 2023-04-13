@@ -5,9 +5,9 @@ if(isset($_REQUEST['admin']))
 
 
 
-    $connection=mysqli_connect('localhost','root','','library');
+    //$connection=mysqli_connect('localhost','root','','library');
       $query="SELECT * FROM `admin`";
-      $data_adan=mysqli_query($connection,$query);
+      $data_adan=mysqli_query($connect,$query);
       while($row=mysqli_fetch_assoc($data_adan))
       {
           
