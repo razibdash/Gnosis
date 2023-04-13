@@ -37,6 +37,18 @@
      </div>
      <!-- Header Part END-->
       
+<?php 
+ if(isset($_REQUEST['adminError']))
+ {
+    ?>
+    <div class="alert alert-warning" role="alert">
+    Opps! Your Admin Username & Password Not Founded!!!!
+</div>
+    <?php 
+ }
+?>
+
+
 <!--login part-->
      <div class="studen_admin_login">
         <div class="container">
@@ -71,7 +83,7 @@
 
                 <div class="col-md-6">
                     <div class="admin_login_form">
-                    <form action="" method="post">
+                    <form action="php_core/login_core.php?admin=true" method="post">
                     <div class="studen">
                     <span><i class="fa-thin fa-key"></i></span>
                         <h2>Admin Login</h2>
@@ -100,30 +112,10 @@
      <!--login part END-->
 
      <?php 
-     $connection=mysqli_connect('localhost','root','','library');
-      $query="SELECT * FROM `admin`";
-      $data_adan=mysqli_query($connection,$query);
-      while($row=mysqli_fetch_assoc($data_adan))
-      {
-          
-          $eamil_admin=$row['email'];
-          $pass_admin=$row['password'];
-         
-      
-     if(isset($_REQUEST['submit']))
-     {
-        $email=$_REQUEST['email'];
-        $pass=$_REQUEST['pswd'];
-        if($eamil_admin==$email && $pass_admin==$pass)
-        {
-            header("location:adminDashboard.php");
-        }
-
-     }
      
-    }
      
      ?>
+     
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
