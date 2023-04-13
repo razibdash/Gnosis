@@ -12,7 +12,7 @@
      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-     <link rel="stylesheet" href="./css/admin-css.css">
+  <link rel="stylesheet" href="./css/style.css">
      <style type="text/css">
     a{
         color:white;
@@ -31,11 +31,6 @@
 </head>
 <body>
   <div class="header">
-      <div class="admin">
-      <a href="adminDashboard.php"><span><i class="fa-solid fa-book"></i> DASHBOARD</span></a>
-
-      
-    </div>
     <div class="container-fluid">
       <div class="admin-section">
        
