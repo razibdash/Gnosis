@@ -15,22 +15,7 @@
   </head>
   <body>
     <?php 
-     $connect=mysqli_connect('localhost','root','','library');
-     $query="SELECT * FROM `student_login_info`";
- 
-     $data_sharing=mysqli_query($connect,$query);
-     $count=0;
-     while($row=mysqli_fetch_assoc($data_sharing))
-     {
-         $id=$row['id'];
-         $first=$row['firstName'];
-         $last_name=$row['lastName'];
-         $email=$row['email'];
-         $pass=$row['password'];
-         $number=$row['number'];
-         $count++;
-     }
-    
+     require_once("config/configer.php");
     ?>
     <div class="header">
         <div class="container-fluid">
@@ -47,33 +32,37 @@
                    
                       <div class="col-md-4">
                         <div class="card-body book-count">
-                       <h4> <i class="fa-solid fa-book icon-dada"></i></h4>
-                         <h4>BOOKS</h4>
-                          <h4><?php $q="SELECT * FROM `add_book`";
- 
-                                $data=mysqli_query($connect,$q);
-                                $c=0;
-                                while($row=mysqli_fetch_assoc($data))
-                                {
-                                    
-                                    $c++;
-                                }
-                                echo $c;
-                          
+                       <h4 class="icon"> <i class="fa-solid fa-book icon-dada"></i></h4>
+                         <div class="card-text">
+                         <h4 class='count'><?php 
+                          $q="SELECT COUNT(*) FROM add_book";
+                          $cnt=mysqli_fetch_assoc(mysqli_query($connect,$q));
+                               echo $cnt['COUNT(*)'];
                           ?></h4>
+                           <h4 class='title' >Total BOOKS</h4>
+                         </div>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="card-body student-count">
-                       <h4> <i class="fa-solid fa-graduation-cap icon-dada"></i></h4>
-                          <h4>STUDENTS</h4>
-                          <h4><?php echo $count ?></h4>
+                       <h4 class="icon"> <i class="fa-solid fa-graduation-cap icon-dada"></i></h4>
+                          <div class="card-text">
+                         <h4 class='count'><?php 
+                          $q="SELECT COUNT(*) FROM student_login_info";
+                          $cnt=mysqli_fetch_assoc(mysqli_query($connect,$q));
+                               echo $cnt['COUNT(*)'];
+                          ?></h4>
+                           <h4 class='title' >Total STUDENTS</h4>
+                         </div>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="card-body issue-book-count">
-                          <h4><i class="fa-solid fa-triangle-exclamation"></i></h4>
-                         <h4>ISSUE BOOKS</h4>
+                          <h4 class="icon"><i class="fa-solid fa-triangle-exclamation"></i></h4>
+                         <div class="card-text">
+                         <h4 class='count'>78</h4>
+                           <h4 class='title' >Total Issues</h4>
+                         </div>
                         </div>
                       </div>
                     </div>
