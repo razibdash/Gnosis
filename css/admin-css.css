@@ -1,5 +1,5 @@
 .header{
-    background: black;
+    background: crimson;
     color: white;
 }
 
@@ -12,7 +12,7 @@
     color: white;
     padding: 20px;
 }
-.header .admin-sextion
+.header .admin-section
 {
     background: tomato;
     height: 700px;
