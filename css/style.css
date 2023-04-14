@@ -254,3 +254,12 @@ h4.book-request {
   margin-right: 10px;
   text-align: center;
 }
+.sing-up-form.student_info{
+  padding: 10px;
+}
+
+ .form-sing {
+  background: white;
+  padding: 40px;
+  border-radius: 25px;
+}

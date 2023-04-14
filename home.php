@@ -1,7 +1,6 @@
      
 <?php require_once('header.php')?>
 
-
 <?php 
  if(isset($_REQUEST['adminError']))
  {
@@ -12,7 +11,6 @@
     <?php 
  }
 ?>
-
 
 <!--login part-->
      <section class="studen_admin_login">
