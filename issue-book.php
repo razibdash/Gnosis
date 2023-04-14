@@ -14,24 +14,8 @@
 
   </head>
   <body>
-    <?php 
-     $connect=mysqli_connect('localhost','root','','library');
-     $query="SELECT * FROM `student_login_info`";
- 
-     $data_sharing=mysqli_query($connect,$query);
-     $count=0;
-     while($row=mysqli_fetch_assoc($data_sharing))
-     {
-         $id=$row['id'];
-         $first=$row['firstName'];
-         $last_name=$row['lastName'];
-         $email=$row['email'];
-         $pass=$row['password'];
-         $number=$row['number'];
-         $count++;
-     }
-    
-    ?>
+  
+   
     <div class="header">
         <div class="container-fluid">
            <div class="admin-section">
@@ -47,7 +31,7 @@
                     <div class="container mt-3">  
                     <?php 
     $connect=mysqli_connect('localhost','root','','library');
-    $query="SELECT * FROM `add_book`";
+    $query="SELECT * FROM `student-issue-book`";
 
     $data_sharing=mysqli_query($connect,$query);
     ?>
@@ -56,10 +40,9 @@
     <tr>
         <th>Serial No</th>
         <th>Book Name</th>
-        <th>Book Picture</th>
         <th>Author</th>
-        <th>Book Details</th>
-        <th>Action</th>
+        <th>Issue Details</th>
+        <th>Issue Date</th>
     </tr>
     </thead>
 <?php
@@ -68,9 +51,9 @@
     {
         
         $bookName=$row['book_name'];
-        $picture=$row['book_picture'];
-        $author=$row['author'];
-        $bookDetail=$row['book-Detail'];
+        $author_n=$row['author_name'];
+        $issueDetail=$row['issue_detalis'];
+        $issueDate=$row['isuue_date'];
         $count++;
         ?>
         <tbody>
@@ -78,15 +61,10 @@
                         <td><?php echo $count?></td>
                            
                             <td><?php echo $bookName?></td>
-                            <td><?php echo $picture?></td>
-                            <td><?php echo $author?></td>
-                            <td><?php echo $bookDetail?></td>
-                           
-                            <td><a href="student-delete.php?id=<?php echo $id ?>">Delete</a></td>
-                            <?php 
-                           
-                            
-                            ?>
+                            <td><?php echo $author_n?></td>
+                            <td><?php echo  $issueDetail?></td>
+                            <td><?php echo $issueDate?></td>
+        
                         </tr>
                 </tbody>
  <?php    

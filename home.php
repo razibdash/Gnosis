@@ -7,7 +7,7 @@
  {
     ?>
     <div class="alert alert-warning" role="alert">
-    Opps! Your Admin Username & Password Not Founded!!!!
+    Opps! Your Username & Password Not Founded!!!!
 </div>
     <?php 
  }
@@ -24,7 +24,7 @@
 
                 <div class="col-md-6">
                     <div class="admin_login_form">
-                    <form action="" method="post">
+                    <form action="php_core/student_login_core.php?student=true" method="post">
                     <div class="studen">
                     <span class='login-icon-avater'><i class="bi bi-person-fill-lock"></i></span>
                         <h2>Student Login</h2>

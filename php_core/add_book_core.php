@@ -15,8 +15,8 @@
             move_uploaded_file($image_tmp_name,$loc.$imageName);
         }
 
-            $data_insert="INSERT INTO `add_book`(`book_name`, `book_picture`, `author`, `book-Detail`) 
-            VALUES ('$book_name','$imageName','$autor','$book_details')";
+              $data_insert="INSERT INTO `add_book`(`book_name`, `book_picture`, `author`, `book-Detail`)
+               VALUES ('$book_name',' $imageName',' $autor',' $book_details')";
               $data = mysqli_query($connect,$data_insert);
               if($data)
               {

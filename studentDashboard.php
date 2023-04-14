@@ -75,7 +75,11 @@
                         <div class="card-body issue-book-count">
                           <h4 class="icon"><i class="fa-solid fa-triangle-exclamation"></i></h4>
                          <div class="card-text">
-                         <h4 class='count'>78</h4>
+                         <h4 class='count'><?php 
+                          $q="SELECT COUNT(*) FROM `student-issue-book`";
+                          $cnt=mysqli_fetch_assoc(mysqli_query($connect,$q));
+                               echo $cnt['COUNT(*)'];
+                          ?></h4>
                            <h4 class='title' >Total Issues</h4>
                          </div>
                         </div>
@@ -86,7 +90,7 @@
                       <div class="row">
                       <div class="col-md-12">
                         <div class="graph">
-                          <img src="./image/gr" alt="">
+                          <img src="./image/graph.jpg" alt="">
                         </div>
                       </div>
                     </div>

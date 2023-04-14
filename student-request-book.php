@@ -28,21 +28,25 @@
          <div class="col-md-10 p-3">
                 <div class="new-book">
 
-                <form action="php_core\std-issue-book.php?issueBook=true" method="post" enctype="multipart/form-data" >
+                <form action="studentDashboard.php" method="post" enctype="multipart/form-data" >
                     <div class="isuue">
-                        <h4>ISSUES</h4>
+                        <h4>REQUEST BOOK</h4>
                     </div>
                         <div class="mb-3 mt-3">
                             <label for="book_name" class="form-label">Book Name:</label>
-                            <input type="text" class="form-control" id="email" placeholder="Book Name" name="b_name" required>
+                            <input type="text" class="form-control" id="email" placeholder="Book Name" name="book-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="file" class="form-label">Book Picture:</label>
+                            <input type="file" class="form-control" id="file" placeholder="Choose Photo" name="photo" required>
                         </div>
                         <div class="mb-3">
                             <label for="autor" class="form-label">Autor:</label>
-                            <input type="text" class="form-control" id="autor" placeholder="Autor Name" name="b_autor" required>
+                            <input type="text" class="form-control" id="autor" placeholder="Autor Name" name="autor" required>
                         </div>
                         <div class="mb-3">
                             <label for="Details" class="form-label">Issue Details:</label>
-                            <input type="text" class="form-control" id="Details" placeholder="Book Details" name="b_details" required>
+                            <input type="text" class="form-control" id="Details" placeholder="Book Details" name="Book-Details" required>
                         </div>
                        <input type="submit" value="Submit" class="btn btn-primary" name="submit" id="">
                        
@@ -52,8 +56,6 @@
         
         </div>
     </div>
-
-
 
    
       
