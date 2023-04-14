@@ -69,27 +69,27 @@
                     <div class="row">
                       <div class="col-md-4">
                         <div class="card-body book-count">
-                       <h4> <i class="fa-solid fa-book-open-reader"></i></h4>
-                        <h4>BOOK REQUEST</h4>
+                       <h4 class="icon-4"> <i class="fa-solid fa-book-open-reader"></i></h4>
+                        <h4 class="book-request">BOOK REQUEST</h4>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="card-body student-count">
-                          <h4><i class="fa-solid fa-bookmark"></i></h4>
-                          <h4>RETURN BOOKS</h4>
+                          <h4 class="icon-5"><i class="fa-solid fa-bookmark"></i></h4>
+                          <h4 class="return-book">RETURN BOOKS</h4>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="card-body student-count">
-                          <h4><i class="fa-solid fa-bookmark"></i></h4>
-                          <h4>RETURN BOOKS</h4>
+                          <h4 class="icon-5"><i class="fa-solid fa-bookmark"></i></h4>
+                          <h4 class="return-book">RETURN BOOKS</h4>
                         </div>
                       </div>
                       </div>
                       <div class="row">
                       <div class="col-md-12">
                         <div class="graph">
-                          <img src="./image/graph.png" alt="">
+                          <img src="./image/gr" alt="">
                         </div>
                       </div>
                     </div>

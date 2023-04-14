@@ -95,6 +95,7 @@ body{
     text-align: center;
     box-shadow: 0px 2px 23px #ddd;
     cursor: crosshair;
+    height: 150px;
 }
 .card-body.book-count h4 i
 {
@@ -165,7 +166,45 @@ body{
     box-shadow: 0px 6px 2px #ddd;
     
 }
+.card-body .icon {
+    border-radius: 100%;
+    padding: 12px;
+    width: 54px;
+    background: bisque;
+    color: darkslateblue;
+  }
+  h4.icon-4 {
+    text-align: initial;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    padding: 17px;
+    background: bisque;
+}
+h4.book-request {
+    font-size: 17px;
+    color: #fca800;
+    text-align: right;
+    font-weight: bolder;
+    margin-top: 20px;
+}
 
-
+h4.icon-5 {
+    text-align: initial;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    padding: 21px;
+    line-height: 0;
+    background: rgb(205, 230, 251);
+    color: cadetblue;
+}
+h4.return-book {
+    font-size: 17px;
+    color: rgb(57, 185, 190);
+    text-align: right;
+    font-weight: bolder;
+    margin-top: 20px;
+}
 
 /*Card part END*/
