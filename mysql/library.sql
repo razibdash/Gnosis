@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 14, 2023 at 06:21 PM
+-- Generation Time: Apr 14, 2023 at 07:32 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -40,15 +40,15 @@ CREATE TABLE `add_book` (
 --
 
 INSERT INTO `add_book` (`id`, `book_name`, `book_picture`, `author`, `book-Detail`) VALUES
-(3, 'algorithm', '', 'jon dio', 'algorithm'),
-(4, 'algorithm', 'Introduction-to-Algorithms.jpg', 'jon dio', 'algorithm'),
-(5, 'DS', 'programming.jpg', 'bennella', 'DS'),
-(6, 'DBMS', 'elibrary.jpg', 'sazikul', 'database management system'),
-(7, 'BEE', 'pblm1.PNG', 'Belenni', 'Besic electric engineering'),
-(8, 'ML', 'elibrary.jpg', 'Rajib', 'jhgd dsjhgds sjhgder ergrf reygrfr reygfryugjhg'),
-(9, 'cp', 'graph.png', 'rajib', 'cp'),
-(10, 'fgfh', 'dashbrd.PNG', 'fghgfh', 'hfghfh'),
-(11, 'algorithm', ' graph.png', ' jon dio', ' cp');
+(3, 'algorithm', 'book-not-found.jpeg', 'jon dio', 'algorithm'),
+(4, 'algorithm', 'book-not-found.jpeg', 'jon dio', 'algorithm'),
+(5, 'DS', 'book-not-found.jpeg', 'bennella', 'DS'),
+(6, 'DBMS', 'book-not-found.jpeg', 'sazikul', 'database management system'),
+(7, 'BEE', 'book-not-found.jpeg', 'Belenni', 'Besic electric engineering'),
+(8, 'ML', 'book-not-found.jpeg', 'Rajib', 'jhgd dsjhgds sjhgder ergrf reygrfr reygfryugjhg'),
+(9, 'cp', 'book-not-found.jpeg', 'rajib', 'cp'),
+(10, 'fgfh', 'book-not-found.jpeg', 'fghgfh', 'hfghfh'),
+(11, 'algorithm', 'book-not-found.jpeg', ' jon dio', ' cp');
 
 -- --------------------------------------------------------
 
