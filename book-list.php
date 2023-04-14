@@ -1,20 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Admin pennel</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     <link rel="stylesheet" href="./css/style.css">
-  </head>
-  <body>
-
-  <!doctype html>
+ <!doctype html>
 <html lang="en">
   <head>
     <title>Title</title>
@@ -24,11 +8,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="./css/home.css">
+     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <div class="header">
@@ -40,10 +24,20 @@
                    require_once("side_bar.php");
                   ?>
               </div>
-              <div class="col-md-10">
-                 <div class="student-info-table p-3">
-                    <h2>BOOK LIST</h2>
-                    <div class="container mt-3">  
+              <div class="col-md-10 p-3">
+                 <div class="student-info-table">
+                 <div class="student">
+                    <h2 class='d-inline'>BOOK LIST</h2>
+                    <div class="input-group search-bar">
+  <input type="search" class="form-control " placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+  <span class="input-group-text border-0" id="search-addon">
+    <i class="fas fa-search"></i>
+  </span>
+</div> 
+                      <a href="add-new-book.php"><h2 class='add-title float-right'>Add New Book <i class="bi bi-plus-circle-dotted"></i></h2></a>
+                    </div>
+                    <div class="container mt-3"> 
+
                     <?php 
     $connect=mysqli_connect('localhost','root','','library');
     $query="SELECT * FROM `add_book`";
