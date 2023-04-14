@@ -25,7 +25,7 @@
                    require_once("side_bar.php");
                   ?>
                 </div>
-                <div class="col-md-10 p-3">
+              <div class="col-md-10 p-3">
                 <div class="new-book">
                 <form action="php_core\add_book_core.php?newBook=true" method="post" enctype="multipart/form-data" >
                     <div class="student">
