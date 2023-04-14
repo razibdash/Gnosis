@@ -156,15 +156,15 @@ body {
     padding: 12px;
     width: 54px;
     background: bisque;
-    color: darkslateblue;
+    color: #dd3d0b;
   }
-  h4.icon-4 {
+  .card-body .icon-4 {
     text-align: initial;
     border-radius: 100%;
     width: 60px;
     height: 60px;
     padding: 17px;
-    background: bisque;
+    background: #ffd3c5;
 }
 h4.book-request {
     font-size: 17px;

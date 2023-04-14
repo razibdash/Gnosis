@@ -15,22 +15,7 @@
   </head>
   <body>
     <?php 
-     $connect=mysqli_connect('localhost','root','','library');
-     $query="SELECT * FROM `student_login_info`";
- 
-     $data_sharing=mysqli_query($connect,$query);
-     $count=0;
-     while($row=mysqli_fetch_assoc($data_sharing))
-     {
-         $id=$row['id'];
-         $first=$row['firstName'];
-         $last_name=$row['lastName'];
-         $email=$row['email'];
-         $pass=$row['password'];
-         $number=$row['number'];
-         $count++;
-     }
-    
+     require_once("config/configer.php");
     ?>
     <div class="header">
         <div class="container-fluid">
@@ -87,13 +72,6 @@
                     </div>
   
                       </div>
-                      <div class="row">
-                      <div class="col-md-12">
-                        <div class="graph">
-                          <img src="./image/graph.jpg" alt="">
-                        </div>
-                      </div>
-                    </div>
                    
                     </div>
                 </div>
