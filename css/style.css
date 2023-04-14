@@ -189,14 +189,15 @@ h4.book-request {
   border: 15px;
   width: 95%;
 }
-.new-book .add-title {
+.student .add-title {
     margin-top: 5px;
     margin-bottom: 20px;
     color: #7d7d7d;
     text-align: right;
     cursor: crosshair;
+    float: right;
 }
-.new-book .add-title i {
+.student .add-title i {
     margin-right: 10px;
     color: 333;
 }
@@ -210,3 +211,36 @@ h4.book-request {
 }
 
 /*Add New Book End*/
+
+.student-info-table
+{
+  background: white;
+  padding: 30px;
+  border: 15px;
+  width: 95%;
+}
+.student-info-table .student {
+  margin-bottom: 30px;
+}
+.student-info-table .search-bar {
+
+  display: inline-flex;
+  width: 50%;
+  justify-content: center;
+  margin: auto;
+  margin-left: 44px;
+}
+.student-info-table .search-bar input
+{
+  border-bottom: 1px solid #33333345 !important;
+  outline: none;
+  border: none;
+  border-radius: unset !important;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.student-info-table .search-bar .form-control:focus
+{
+  box-shadow: none;
+  border-bottom: 1px solid #ffb5b5 !important;
+}

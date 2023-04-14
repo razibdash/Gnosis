@@ -28,7 +28,7 @@
                 <div class="col-md-10 p-3">
                 <div class="new-book">
                 <form action="php_core\add_book_core.php?newBook=true" method="post" enctype="multipart/form-data" >
-                    <div class="studen">
+                    <div class="student">
                         <h2 class='add-title '>Add New Book <i class="bi bi-plus-circle-dotted"></i></h2>
                     </div>
                         <div class="mb-3 mt-3">
