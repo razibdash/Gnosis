@@ -42,8 +42,59 @@
                    require_once("side-bar-student.php");
                    ?>
                  </div>
-                 <div class="col-md-10">
+                <div class="col-md-10">
+                    <div class="row">
                    
+                      <div class="col-md-4">
+                        <div class="card-body book-count">
+                       <h4 class="icon"> <i class="fa-solid fa-book icon-dada"></i></h4>
+                         <div class="card-text">
+                         <h4 class='count'><?php 
+                          $q="SELECT COUNT(*) FROM add_book";
+                          $cnt=mysqli_fetch_assoc(mysqli_query($connect,$q));
+                               echo $cnt['COUNT(*)'];
+                          ?></h4>
+                           <h4 class='title' >Total BOOKS</h4>
+                         </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card-body student-count">
+                       <h4 class="icon"> <i class="fa-solid fa-graduation-cap icon-dada"></i></h4>
+                          <div class="card-text">
+                         <h4 class='count'><?php 
+                          $q="SELECT COUNT(*) FROM student_login_info";
+                          $cnt=mysqli_fetch_assoc(mysqli_query($connect,$q));
+                               echo $cnt['COUNT(*)'];
+                          ?></h4>
+                           <h4 class='title' >REQUEST BOOK</h4>
+                         </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card-body issue-book-count">
+                          <h4 class="icon"><i class="fa-solid fa-triangle-exclamation"></i></h4>
+                         <div class="card-text">
+                         <h4 class='count'>78</h4>
+                           <h4 class='title' >Total Issues</h4>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+  
+                      </div>
+                      <div class="row">
+                      <div class="col-md-12">
+                        <div class="graph">
+                          <img src="./image/gr" alt="">
+                        </div>
+                      </div>
+                    </div>
+                   
+                    </div>
+                </div>
+            </div>
+           </div>
                     </div>
                    
                     </div>
