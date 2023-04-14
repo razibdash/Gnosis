@@ -41,7 +41,7 @@
                   ?>
               </div>
               <div class="col-md-10">
-                 <div class="student-info-table">
+                 <div class="student-info-table p-3">
                     <h2>BOOK LIST</h2>
                     <div class="container mt-3">  
                     <?php 
@@ -66,6 +66,7 @@
     while($row=mysqli_fetch_assoc($data_sharing))
     {
         
+        $id=$row['id'];
         $bookName=$row['book_name'];
         $picture=$row['book_picture'];
         $author=$row['author'];
@@ -81,7 +82,7 @@
                             <td><?php echo $author?></td>
                             <td><?php echo $bookDetail?></td>
                            
-                            <td><a href="student-delete.php?id=<?php echo $id ?>">Delete</a></td>
+                            <td><a href="php_core\book_delete_core.php?id=<?php echo $id ?>&&pictureName=<?php echo $picture?>">Delete</a></td>
                             <?php 
                            
                             

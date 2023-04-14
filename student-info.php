@@ -13,27 +13,14 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="./css/style.css">
-     <style type="text/css">
-    a{
-        color:white;
-        text-decoration:none;
-    }
-    a:hover{
-        color:black;
-        text-decoration:none;
-    }
-    .student-info-table h2{
-        text-align: center;
-    }
 
-     </style>
 
 </head>
 <body>
   <div class="header">
     <div class="container-fluid">
       <div class="admin-section">
-       
+    
             <div class="row">
                 <div class="col-md-2 p-0">
                <?php
@@ -84,7 +71,7 @@
                             <td><?php echo $email?></td>
                             <td><?php echo $pass?></td>
                             <td><?php echo $number?></td>
-                            <td><a href="student-delete.php?id=<?php echo $id ?>">Delete</a></td>
+                            <td><a href="php_core\student_delete_core.php?id=<?php echo $id ?>">Delete</a></td>
                             <?php 
                            
                             

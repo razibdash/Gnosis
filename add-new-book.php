@@ -8,8 +8,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="./css/home.css">
      <link rel="stylesheet" href="./css/style.css">
 
   </head>
@@ -23,12 +25,11 @@
                    require_once("side_bar.php");
                   ?>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-10 p-3">
                 <div class="new-book">
-                <form action="Add-new-book.php" method="post" enctype="multipart/form-data" >
+                <form action="php_core\add_book_core.php?newBook=true" method="post" enctype="multipart/form-data" >
                     <div class="studen">
-                    <span><i class="fa-thin fa-key"></i></span>
-                        <h2>Add New Book</h2>
+                        <h2 class='add-title '>Add New Book <i class="bi bi-plus-circle-dotted"></i></h2>
                     </div>
                         <div class="mb-3 mt-3">
                             <label for="book_name" class="form-label">Book Name:</label>
@@ -57,30 +58,7 @@
         </div>
     </div>
 
-    <?php 
-    $connection=mysqli_connect('localhost','root','','library');
-    if(isset($_REQUEST['submit']))
-    {
-        $book_name=$_REQUEST['book-name'];
-        $book_photo=$_FILES['photo'];
-        $imageName=$book_photo['name'];
-        $image_tmp_name=$book_photo['tmp_name'];
-        $autor=$_REQUEST['autor'];
-        $book_details=$_REQUEST['Book-Details'];
-        if(!empty($imageName))
-        {
-            $loc="photo/";
-            move_uploaded_file($image_tmp_name,$loc.$imageName);
-        }
-
-            $data_insert="INSERT INTO `add_book`(`book_name`, `book_picture`, `author`, `book-Detail`) 
-            VALUES ('$book_name','$imageName','$autor','$book_details')";
-              mysqli_query($connection,$data_insert);
-
-
-    }
-    
-    ?>
+   
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
