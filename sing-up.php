@@ -13,7 +13,7 @@
    <div class="sing-up-form student_info">
       <div class="container">
          <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 col-xxl-12 col-lg-12 ">
                <div class="form-sing">
                   
                <form action="sing-up.php" method="post" class="was-validated">

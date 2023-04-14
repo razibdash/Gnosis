@@ -38,12 +38,12 @@
       <div class="admin-section">
        
             <div class="row">
-                <div class="col-md-2 p-0">
+                <div class="col-md-2 col-xxl-2 col-lg-2  p-0">
                <?php
                 require_once("side_bar.php");
                ?>
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-10 col-xxl-10 col-lg-10 ">
                 <div class="student-info-table">
                     <h2>STUDENT INFO</h2>
                     <div class="container mt-3">  

@@ -18,11 +18,11 @@
      <section class="studen_admin_login">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-xxl-6 col-lg-6 ">
                     <img src="image/student-login.png" alt="admin login not found">
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 col-xxl-6 col-lg-6 ">
                     <div class="admin_login_form">
                     <form action="php_core/student_login_core.php?student=true" method="post">
                     <div class="studen">
