@@ -29,7 +29,15 @@
                 </div>
                 <div class="col-md-10">
                 <div class="student-info-table">
-                    <h2>STUDENT INFO</h2>
+                    <div class="student">
+                    <h2 class='d-inline'>STUDENT INFO</h2>
+                    <div class="input-group search-bar">
+                      <input type="search" class="form-control " placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                      <span style='background: none;' class="input-group-text border-0" id="search-addon">
+                        <i class="fas fa-search"></i>
+                      </span>
+                    </div> 
+                    </div>
                     <div class="container mt-3">  
                     <?php 
     $connect=mysqli_connect('localhost','root','','library');
@@ -50,6 +58,7 @@
         <th>Action</th>
     </tr>
     </thead>
+    <tbody>
 <?php
    $count=0;
     while($row=mysqli_fetch_assoc($data_sharing))
@@ -62,7 +71,7 @@
         $number=$row['number'];
         $count++;
         ?>
-        <tbody>
+       
                         <tr>
                         <td><?php echo $count?></td>
                             <td><?php echo $id?></td>
@@ -77,13 +86,14 @@
                             
                             ?>
                         </tr>
-                </tbody>
+              
  <?php    
     }
     
     
     
     ?>        
+      </tbody>
                     </table>
                     </div>
                 </div>

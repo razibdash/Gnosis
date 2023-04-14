@@ -30,6 +30,9 @@
 
 </head>
 <body>
+<?php 
+     require_once("config/configer.php");
+    ?>
   <div class="header">
     <div class="container-fluid">
       <div class="admin-section">
@@ -45,7 +48,6 @@
                     <h2>STUDENT INFO</h2>
                     <div class="container mt-3">  
                     <?php 
-    $connect=mysqli_connect('localhost','root','','library');
     $query="SELECT * FROM `student_login_info`";
 
     $data_sharing=mysqli_query($connect,$query);

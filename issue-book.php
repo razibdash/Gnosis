@@ -14,7 +14,9 @@
 
   </head>
   <body>
-  
+  <?php 
+     require_once("config/configer.php");
+    ?>
    
     <div class="header">
         <div class="container-fluid">
@@ -30,7 +32,6 @@
                     <h2>ISSUE BOOK</h2>
                     <div class="container mt-3">  
                     <?php 
-    $connect=mysqli_connect('localhost','root','','library');
     $query="SELECT * FROM `student-issue-book`";
 
     $data_sharing=mysqli_query($connect,$query);

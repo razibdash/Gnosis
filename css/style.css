@@ -218,6 +218,7 @@ h4.book-request {
   padding: 30px;
   border: 15px;
   width: 95%;
+  overflow-x: auto;
 }
 .student-info-table .student {
   margin-bottom: 30px;
@@ -244,4 +245,12 @@ h4.book-request {
 {
   box-shadow: none;
   border-bottom: 1px solid #ffb5b5 !important;
+}
+.book-img {
+  width: 100px;
+}
+.serial {
+  width: 20px;
+  margin-right: 10px;
+  text-align: center;
 }
