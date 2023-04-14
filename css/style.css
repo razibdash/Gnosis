@@ -229,6 +229,7 @@ h4.book-request {
   justify-content: center;
   margin: auto;
   margin-left: 44px;
+  float: right;
 }
 .student-info-table .search-bar input
 {

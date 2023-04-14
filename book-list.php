@@ -34,7 +34,6 @@
     <i class="fas fa-search"></i>
   </span>
 </div> 
-                      <a href="add-new-book.php"><h2 class='add-title float-right'>Add New Book <i class="bi bi-plus-circle-dotted"></i></h2></a>
                     </div>
                     <div class="container mt-3"> 
 
