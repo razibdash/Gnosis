@@ -7,7 +7,7 @@
     ?>
     <div class="alert alert-warning" role="alert">
     This Username, Password & Phone Number Already Exist.
-    <b>Please! Contact with admin if you username & password.</b>
+    <b>Please! Contact with admin if you lost username & password.</b>
 </div>
     <?php 
  }else if(isset($_REQUEST['retryeEroor']))
