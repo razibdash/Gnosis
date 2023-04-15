@@ -17,23 +17,6 @@
      require_once("config/configer.php");
     ?>
   <body>
-    <?php 
-     $query="SELECT * FROM `student_login_info`";
- 
-     $data_sharing=mysqli_query($connect,$query);
-     $count=0;
-     while($row=mysqli_fetch_assoc($data_sharing))
-     {
-         $id=$row['id'];
-         $first=$row['firstName'];
-         $last_name=$row['lastName'];
-         $email=$row['email'];
-         $pass=$row['password'];
-         $number=$row['number'];
-         $count++;
-     }
-    
-    ?>
     <section>
               
                <div class="admin-section">
@@ -49,12 +32,6 @@
             <div class="student-info-table">
                     <h2>BOOK REQUEST</h2>
                     <div class="container mt-3">  
-                    <?php 
-                        $connect=mysqli_connect('localhost','root','','library');
-                        $query="SELECT * FROM `student_book_request`";
-
-                        $data_sharing=mysqli_query($connect,$query);
-                        ?>
                         <table class="table table-hover">
                         <thead>
                         <tr>
@@ -69,6 +46,10 @@
                         <tbody>
                     <?php
                     $count=0;
+
+                        $query="SELECT * FROM `student_book_request`";
+
+                        $data_sharing=mysqli_query($connect,$query);
                         while($row=mysqli_fetch_assoc($data_sharing))
                         {
                             
@@ -88,8 +69,7 @@
                             <td><?php echo $request_date?></td>
                            
                             <td><a href=".php?id=<?php echo $id ?>">Delete</a></td>
-                            <?php        
-                            ?>
+                            
                         </tr>
                 
         <?php    

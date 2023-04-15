@@ -28,7 +28,7 @@
          <div class="col-md-10 col-xxl-10 col-lg-10  p-3 mb-auto d-flex justify-content-center ">
                 <div class="new-book">
 
-                <form action="studentDashboard.php" method="post" enctype="multipart/form-data" >
+                <form action="" method="post" enctype="multipart/form-data" >
                     <div class="isuue">
                         <h4>REQUEST BOOK</h4>
                     </div>
