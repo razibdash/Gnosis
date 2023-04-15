@@ -74,6 +74,11 @@
                       <div class="col-md-4">
                         <div class="card-body book-count">
                        <h4 class="icon-4"> <i class="fa-solid fa-book-open-reader"></i></h4>
+                       <h4 class='count book_rrr'><?php 
+                          $q="SELECT COUNT(*) FROM `student_book_request`";
+                          $cnt=mysqli_fetch_assoc(mysqli_query($connect,$q));
+                               echo $cnt['COUNT(*)'];
+                          ?></h4>
                         <h4 class="book-request">BOOK REQUEST</h4>
                         </div>
                       </div>

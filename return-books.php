@@ -42,11 +42,11 @@
                 </div>
                 <div class="col-md-10">
                 <div class="student-info-table">
-                    <h2>STUDENT INFO</h2>
+                    <h2>RETURN BOOKS</h2>
                     <div class="container mt-3">  
                     <?php 
     $connect=mysqli_connect('localhost','root','','library');
-    $query="SELECT * FROM `student_login_info`";
+    $query="SELECT * FROM `return_books`";
 
     $data_sharing=mysqli_query($connect,$query);
     ?>
@@ -55,11 +55,9 @@
     <tr>
         <th>Serial No</th>
         <th>Id</th>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
-        <th>Password</th>
-        <th>Number</th>
+        <th>Student Name</th>
+        <th>BOOK Name</th>
+        <th>Retrun Date</th>
         <th>Action</th>
     </tr>
     </thead>
@@ -68,23 +66,21 @@
     while($row=mysqli_fetch_assoc($data_sharing))
     {
         $id=$row['id'];
-        $first=$row['firstName'];
-        $last_name=$row['lastName'];
-        $email=$row['email'];
-        $pass=$row['password'];
-        $number=$row['number'];
+        $s_name=$row['student_n'];
+        $book_name=$row['book_n'];
+        $r_date=$row['retrun_date'];
+      
         $count++;
         ?>
         <tbody>
                         <tr>
                         <td><?php echo $count?></td>
                             <td><?php echo $id?></td>
-                            <td><?php echo $first?></td>
-                            <td><?php echo $last_name?></td>
-                            <td><?php echo $email?></td>
-                            <td><?php echo $pass?></td>
-                            <td><?php echo $number?></td>
-                            <td><a href="student-delete.php?id=<?php echo $id ?>">Delete</a></td>
+                            <td><?php echo  $s_name?></td>
+                            <td><?php echo $book_name?></td>
+                            <td><?php echo $r_date?></td>
+                           
+                            <td><a href=".php?id=<?php echo $id ?>">Delete</a></td>
                             <?php 
                            
                             

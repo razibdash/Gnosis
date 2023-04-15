@@ -10,6 +10,7 @@
    <link rel="stylesheet" href="./css/student_info.css">
 </head>
 <body>
+<?php require_once('header.php')?>
    <div class="sing-up-form student_info">
       <div class="container">
          <div class="row">

@@ -120,10 +120,11 @@ body {
   font-size: 18px;
 }
 .card-body .count {
-  font-weight: bolder;
-  font-size: 30px;
-  line-height: 2;
-  margin-top: -50px;
+     font-weight: bolder;
+      font-size: 30px;
+      line-height: 2;
+      margin-top: -43px;
+      text-align: right;
 }
 .student-count {
   background: #e0f8ea;
@@ -131,6 +132,10 @@ body {
   border-radius: 20px;
   color: black;
   text-align: center;
+}
+.count.book_rrr {
+  text-align: right;
+  margin-right: 25px;
 }
 .card-body.student-count .title {
   color: #00ca50;

@@ -49,7 +49,7 @@
                     <div class="container mt-3">  
                     <?php 
                         $connect=mysqli_connect('localhost','root','','library');
-                        $query="SELECT * FROM `add_book`";
+                        $query="SELECT * FROM `student_book_request`";
 
                         $data_sharing=mysqli_query($connect,$query);
                         ?>
@@ -57,10 +57,10 @@
                         <thead>
                         <tr>
                             <th>Serial No</th>
+                            <th>Student Name</th>
                             <th>Book Name</th>
-                            <th>Book Picture</th>
                             <th>Author</th>
-                            <th>Book Details</th>
+                            <th>Request Date</th>
                             <th>Action</th>
                         </tr>
                         </thead>
@@ -69,22 +69,22 @@
                         while($row=mysqli_fetch_assoc($data_sharing))
                         {
                             
-                            $bookName=$row['book_name'];
-                            $picture=$row['book_picture'];
-                            $author=$row['author'];
-                            $bookDetail=$row['book-Detail'];
+                            $student_name=$row['student_name'];
+                            $book_name=$row['book_name'];
+                            $author_name=$row['author_name'];
+                            $request_date=$row['request_date'];
                             $count++;
                             ?>
                             <tbody>
                         <tr>
                         <td><?php echo $count?></td>
                            
-                            <td><?php echo $bookName?></td>
-                            <td><?php echo $picture?></td>
-                            <td><?php echo $author?></td>
-                            <td><?php echo $bookDetail?></td>
+                            <td><?php echo $student_name?></td>
+                            <td><?php echo $book_name?></td>
+                            <td><?php echo $author_name?></td>
+                            <td><?php echo $request_date?></td>
                            
-                            <td><a href="student-delete.php?id=<?php echo $id ?>">Delete</a></td>
+                            <td><a href=".php?id=<?php echo $id ?>">Delete</a></td>
                             <?php        
                             ?>
                         </tr>

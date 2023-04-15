@@ -43,6 +43,7 @@
         <th>Author</th>
         <th>Issue Details</th>
         <th>Issue Date</th>
+        <th>Action</th>
     </tr>
     </thead>
 <?php
@@ -64,6 +65,7 @@
                             <td><?php echo $author_n?></td>
                             <td><?php echo  $issueDetail?></td>
                             <td><?php echo $issueDate?></td>
+                            <td><a href="">Dlete</a></td>
         
                         </tr>
                 </tbody>
