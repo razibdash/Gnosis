@@ -8,15 +8,21 @@
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="home.css">
 </head>
 <body>
+<?php require_once('header.php')?>
    <div class="sing-up-form student_info">
       <div class="container">
          <div class="row">
             <div class="col-md-12 col-xxl-12 col-lg-12 ">
                <div class="form-sing">
-                  
+               
                <form action="php_core/new_user_core.php?addUser" method="post" class="was-validated">
+                  <div class="form_heading">
+                     <h4><span class='login-icon-avater'><i class="bi bi-person-fill-lock"></i></span></h4>
+                   <h2>SING UP</h2>
+                  </div>
                   <div class="row">
                      <div class="col-md-6 col-xxl-6 col-lg-6">
                      <div class="mb-3 mt-3">
