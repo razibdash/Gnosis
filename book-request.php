@@ -1,3 +1,14 @@
+
+<?php 
+if(!isset($_REQUEST['26474p']) || $_REQUEST['bookRequest']!='true' )
+{
+  header("Location: book-request.php?bookRequest=true&&26474p");
+  //echo '<script>window.location.href="admin-login.php"</script>';
+}
+
+?>
+
+
 <!doctype html>
 <html lang="en">
   <head>

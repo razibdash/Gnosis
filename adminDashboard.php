@@ -1,3 +1,13 @@
+<?php 
+if(!isset($_REQUEST['26474']) || $_REQUEST['adDashboard']!='true' )
+{
+  header("Location: adminDashboard.php?adDashboard=true&&26474");
+  //echo '<script>window.location.href="admin-login.php"</script>';
+}
+
+?>
+
+
 <!doctype html>
 <html lang="en">
   <head>

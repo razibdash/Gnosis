@@ -1,3 +1,13 @@
+<?php 
+if(!isset($_REQUEST['26474']) || $_REQUEST['sinfoAdmin']!='true' )
+{
+  header("Location: student-info.php?sinfoAdmin=true&&26474");
+  //echo '<script>window.location.href="admin-login.php"</script>';
+}
+
+?>
+
+
 <!doctype html>
 <html lang="en">
   <head>

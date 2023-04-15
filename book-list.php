@@ -1,4 +1,15 @@
- <!doctype html>
+<?php 
+if(!isset($_REQUEST['26474']) || $_REQUEST['bookList']!='true' )
+{
+  header("Location: book-list.php?bookList=true&&26474");
+  //echo '<script>window.location.href="admin-login.php"</script>';
+}
+
+?>
+
+
+
+<!doctype html>
 <html lang="en">
   <head>
     <title>Title</title>
