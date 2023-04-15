@@ -1,7 +1,7 @@
 
-<div class="admin">
+<div class="admin side-menu-bar">
       <div class="manu">
-            <ul>
+            <ul class='side-menu-bar-ul'>
             <li class='<?php echo ($_REQUEST['adDashboard']==true && isset($_REQUEST['adDashboard']))?  "actives":""; ?>' ><a class="dashboard " href="adminDashboard.php?adDashboard=true&&26474"><span ><i class="fa-solid fa-book"></i> DASHBOARD</span></a>
             <li class='<?php echo ($_REQUEST['newBook']==true && isset($_REQUEST['newBook']))?  "actives":""; ?>' ><a href="add-new-book.php?newBook=true&&26474"><i class="fa-sharp fa-solid fa-book-tanakh"></i>  Add book</a></li>
                 <li class='<?php echo ($_REQUEST['bookList']==true && isset($_REQUEST['bookList']))?  "actives":""; ?>' ><a href="book-list.php?bookList=true&&26474"><i class="fa-solid fa-list"></i>  Book List</a></li>
