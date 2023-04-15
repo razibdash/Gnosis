@@ -7,8 +7,8 @@
 
     $insert="INSERT INTO `return_books`(`student_n`, `book_n`)
      VALUES ('$b_name','$b_book')";
-     mysqli_query($connect,$insert);
-     if($insert)
+     $data=mysqli_query($connect,$insert);
+     if($data)
      {
        echo '<script>window.location.href="../student_return_book.php"</script>';
      }else

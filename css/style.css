@@ -171,6 +171,21 @@ body {
     padding: 17px;
     background: #ffd3c5;
 }
+h4.icon-5 {
+  text-align: initial;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  padding: 16px 20px;
+  color: #00ca50;
+  background: #b4edcc;
+}
+.student-count .return-book {
+  color: #00ca50;
+  text-align: right;
+  font-size: larger;
+  font-weight: bolder;
+}
 h4.book-request {
     font-size: 17px;
     color: #fca800;

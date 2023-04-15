@@ -48,13 +48,9 @@
                     <h2>RETURN BOOKS</h2>
                     <div class="container mt-3">  
                     <?php 
-<<<<<<< HEAD
+
     $connect=mysqli_connect('localhost','root','','library');
     $query="SELECT * FROM `return_books`";
-=======
-    $query="SELECT * FROM `student_login_info`";
->>>>>>> 23eeb2f24a4584ed3fe76fd1c29fe038b06f49cf
-
     $data_sharing=mysqli_query($connect,$query);
     ?>
     <table class="table table-hover">

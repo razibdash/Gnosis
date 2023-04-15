@@ -28,7 +28,7 @@
          <div class="col-md-10 p-3">
                 <div class="new-book">
 
-                <form action="php_core\std_return_book.php?returnBook=true" method="post" enctype="multipart/form-data" >
+                <form action="php_core\std_return_book.php?returnBook=true" method="post" >
                     <div class="isuue">
                         <h4>RETURN BOOK</h4>
                     </div>
