@@ -2,7 +2,7 @@
 
 require_once("../config/configer.php");
 
-if(isset($_REQUEST['submit']) &&  isset($_REQUEST['addUser']))
+if(isset($_REQUEST['submit']))
 {
    $fastName=$_REQUEST['fname'];
    $lastName=$_REQUEST['lname'];
@@ -10,17 +10,26 @@ if(isset($_REQUEST['submit']) &&  isset($_REQUEST['addUser']))
    $password=$_REQUEST['password'];
    $number=$_REQUEST['number'];
    
-   $insert_data="INSERT INTO `student_login_info`(`firstName`, `lastName`, `email`, `password`, `number`)
-    VALUES ('$fastName','$lastName','$email','$password','$number')";
-    $data = mysqli_query($connect,$insert_data);
-    
-    if($data)
+   $query="SELECT id FROM `student_login_info` WHERE  `email`='$email' AND `password`='$pass' AND `number`='$number'";
+    $data_adan=mysqli_fetch_assoc(mysqli_query($connect,$query));
+    if(!$data_adan)
     {
-        echo '<script>window.location.href="../home.php?logdenIn=true"</script>';
+        $insert_data="INSERT INTO `student_login_info`(`firstName`, `lastName`, `email`, `password`, `number`)
+        VALUES ('$fastName','$lastName','$email','$password','$number')";
+       $data= mysqli_query($connection,$insert_data);
+       if($data)
+       {
+        header('Location:../home.php?success');
+       }else
+       {
+        header('Location: ../Sing-up.php?retryeEroor=true');
+       }
     }else
     {
-        echo '<script>window.location.href="../sing-up.php?logEror=false"</script>';
+        header('Location: ../Sing-up.php?havedata=true');
     }
+
+   
    
 }
 

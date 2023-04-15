@@ -1,21 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>sing up</title>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="home.css">
-</head>
-<body>
+
+
 <?php require_once('header.php')?>
+<?php 
+ if(isset($_REQUEST['havedata']))
+ {
+    ?>
+    <div class="alert alert-warning" role="alert">
+    This Username, Password & Phone Number Already Exist.
+    <b>Please! Contact with admin if you username & password.</b>
+</div>
+    <?php 
+ }else if(isset($_REQUEST['retryeEroor']))
+ {
+   ?>
+   <div class="alert alert-warning" role="alert">
+   Opps!! Someting went wrong please try again later.
+</div>
+<?php 
+ }
+?>
    <div class="sing-up-form student_info">
+      
       <div class="container">
+         
          <div class="row">
             <div class="col-md-12 col-xxl-12 col-lg-12 ">
+               
                <div class="form-sing">
                
                <form action="php_core/new_user_core.php?addUser" method="post" class="was-validated">
@@ -75,25 +85,6 @@
       </div>
    </section>
 
-   <?php  
-
-   $connection=mysqli_connect('localhost','root','','library');  
-   if(isset($_REQUEST['submit']))
-   {
-      $fastName=$_REQUEST['fname'];
-      $lastName=$_REQUEST['lname'];
-      $email=$_REQUEST['email'];
-      $password=$_REQUEST['password'];
-      $number=$_REQUEST['number'];
-      
-      $insert_data="INSERT INTO `student_login_info`(`firstName`, `lastName`, `email`, `password`, `number`)
-       VALUES ('$fastName','$lastName','$email','$password','$number')";
-       mysqli_query($connection,$insert_data);
-      
-   }
-
-
-?>
 
 
 <?php require_once('footer.php')?> 

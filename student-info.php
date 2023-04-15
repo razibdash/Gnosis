@@ -26,6 +26,7 @@ if(!isset($_REQUEST['26474']) || $_REQUEST['sinfoAdmin']!='true' )
 
 
 </head>
+<?php require_once("../config/configer.php"); ?>
 <body>
   <section>
     <div class="container-fluid">
@@ -49,12 +50,6 @@ if(!isset($_REQUEST['26474']) || $_REQUEST['sinfoAdmin']!='true' )
                     </div> 
                     </div>
                     <div class="container mt-3">  
-                    <?php 
-    $connect=mysqli_connect('localhost','root','','library');
-    $query="SELECT * FROM `student_login_info`";
-
-    $data_sharing=mysqli_query($connect,$query);
-    ?>
     <table class="table table-hover">
     <thead>
     <tr>
@@ -71,6 +66,9 @@ if(!isset($_REQUEST['26474']) || $_REQUEST['sinfoAdmin']!='true' )
     <tbody>
 <?php
    $count=0;
+   $query="SELECT * FROM `student_login_info`";
+
+    $data_sharing=mysqli_query($connect,$query);
     while($row=mysqli_fetch_assoc($data_sharing))
     {
         $id=$row['id'];

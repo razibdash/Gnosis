@@ -14,7 +14,7 @@ if(isset($_REQUEST['student']))
          //echo '<script>window.location.href="../studentDashboard.php?sDashboard=true&&2747"</script>';
        }else
        {
-        header('Location:../studentDashboard.php?../home.php?adminError=checkout');
+        header('Location:../home.php?../home.php?adminError=checkout');
          //echo '<script>window.location.href="../home.php?adminError=checkout"</script>';
        }
    
