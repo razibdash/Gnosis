@@ -20,7 +20,7 @@ if(isset($_REQUEST['admin']))
         $pass=$_REQUEST['pswd'];
         if($eamil_admin==$email && $pass_admin==$pass)
         {
-            //header("Location:adminDashboard.php");
+            header("Location:adminDashboard.php");
             echo '<script>window.location.href="../adminDashboard.php?adDashboard=true&&26474"</script>';
         }else
         {
