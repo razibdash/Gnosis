@@ -53,7 +53,6 @@
         <th>Book Name</th>
         <th>Author</th>
         <th>Book Details</th>
-        <th>Action</th>
     </tr>
     </thead>
     <tbody>
@@ -77,7 +76,6 @@
                             <td><?php echo $author?></td>
                             <td><?php echo $bookDetail?></td>
                            
-                            <td><a href="php_core\book_delete_core.php?id=<?php echo $id ?>&&pictureName=<?php echo $picture?>">Delete</a></td>
                             <?php 
                            
                             

@@ -288,3 +288,19 @@ h4.book-request {
   padding: 40px;
   border-radius: 25px;
 }
+.student-dtl-card{
+  background-color: white;
+  padding: 25px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 50px #3bc6c733;
+}
+.s-image{
+  max-width: 100%;
+  background: #fdeae4;
+  border-radius: 15px;
+  padding: 25px;
+  
+}
+.s-image img {
+  border-radius: 15px;
+}
