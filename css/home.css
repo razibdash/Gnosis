@@ -2,8 +2,8 @@
     position: relative;
     width: 100%;
     background-color: white !important;
-    box-shadow: 0px -31px 87px #2e62dd70 !important;
-    border-bottom: 1px solid #00cd93 !important;
+    box-shadow: 0px -31px 87px #2e62dd70;
+    border-bottom: 1px solid #00cd93;
 }
 .header .logo{
     text-align: center;
