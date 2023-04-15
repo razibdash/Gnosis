@@ -18,7 +18,7 @@
      require_once("config/configer.php");
     ?>
    
-    <div class="header">
+    <section>
         <div class="container-fluid">
            <div class="admin-section">
            <div class="row">
@@ -27,7 +27,7 @@
                    require_once("side_bar.php");
                   ?>
                 </div>
-                <div class="col-md-10 col-xxl-10 col-lg-10 ">
+                <div class="col-md-10 col-xxl-10 col-lg-10  p-3 mb-auto d-flex justify-content-center ">
                  <div class="student-info-table">
                     <h2>ISSUE BOOK</h2>
                     <div class="container mt-3">  
@@ -45,7 +45,7 @@
         <th>Issue Details</th>
         <th>Issue Date</th>
     </tr>
-    </thead>
+    </thead> <tbody>
 <?php
    $count=0;
     while($row=mysqli_fetch_assoc($data_sharing))
@@ -57,7 +57,7 @@
         $issueDate=$row['isuue_date'];
         $count++;
         ?>
-        <tbody>
+       
                         <tr>
                         <td><?php echo $count?></td>
                            
@@ -67,13 +67,13 @@
                             <td><?php echo $issueDate?></td>
         
                         </tr>
-                </tbody>
+                
  <?php    
     }
     
     
     
-    ?>        
+    ?>     </tbody>   
                     </table>
                     </div>
                  </div>

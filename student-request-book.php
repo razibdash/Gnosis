@@ -15,7 +15,7 @@
      <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div class="header">
+  <section>
       <div class="container-fluid">
          <div class="admin-section">
          <div class="row">
@@ -25,7 +25,7 @@
                   ?>
               </div>
             
-         <div class="col-md-10  col-xxl-10 col-lg-10  p-3">
+         <div class="col-md-10 col-xxl-10 col-lg-10  p-3 mb-auto d-flex justify-content-center ">
                 <div class="new-book">
 
                 <form action="studentDashboard.php" method="post" enctype="multipart/form-data" >

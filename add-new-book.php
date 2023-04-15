@@ -16,7 +16,7 @@
 
   </head>
   <body>
-    <div class="header">
+    <section>
         <div class="container-fluid">
            <div class="admin-section">
            <div class="row">
@@ -56,7 +56,7 @@
            </div>
         
         </div>
-    </div>
+    </section>
 
    
       

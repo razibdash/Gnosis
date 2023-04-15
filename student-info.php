@@ -17,7 +17,7 @@
 
 </head>
 <body>
-  <div class="header">
+  <section>
     <div class="container-fluid">
       <div class="admin-section">
     
@@ -27,7 +27,7 @@
                 require_once("side_bar.php");
                ?>
                 </div>
-                <div class="col-md-10 col-xxl-10 col-lg-10 ">
+                <div class="col-md-10 col-xxl-10 col-lg-10  p-3 d-flex justify-content-center mb-auto">
                 <div class="student-info-table">
                     <div class="student">
                     <h2 class='d-inline'>STUDENT INFO</h2>

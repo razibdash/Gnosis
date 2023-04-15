@@ -33,7 +33,7 @@
 <?php 
      require_once("config/configer.php");
     ?>
-  <div class="header">
+  <section>
     <div class="container-fluid">
       <div class="admin-section">
        
@@ -43,7 +43,7 @@
                 require_once("side_bar.php");
                ?>
                 </div>
-                <div class="col-md-10 col-xxl-10 col-lg-10 ">
+                <div class="col-md-10 col-xxl-10 col-lg-10  p-3 mb-auto d-flex justify-content-center">
                 <div class="student-info-table">
                     <h2>STUDENT INFO</h2>
                     <div class="container mt-3">  

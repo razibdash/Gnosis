@@ -15,7 +15,7 @@
      <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div class="header">
+  <section>
       <div class="container-fluid">
          <div class="admin-section">
          <div class="row">

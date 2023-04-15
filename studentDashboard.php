@@ -17,7 +17,7 @@
     <?php 
      require_once("config/configer.php");
     ?>
-    <div class="header">
+    <section >
         <div class="container-fluid">
         
            <div class="admin-section">
@@ -76,7 +76,7 @@
                     </div>
                 </div>
             </div>
-           </div>
+           </section>
                     </div>
                    
                     </div>

@@ -18,7 +18,7 @@
 <?php 
      require_once("config/configer.php");
     ?>
-  <div class="header">
+  <section>
       <div class="container-fluid">
          <div class="admin-section">
          <div class="row">
@@ -27,7 +27,7 @@
                    require_once("side-bar-student.php");
                   ?>
               </div>
-              <div class="col-md-10 col-xxl-10 col-lg-10 p-3">
+              <div class="col-md-10 col-xxl-10 col-lg-10  p-3 mb-auto d-flex justify-content-center ">
                  <div class="student-info-table">
                  <div class="student">
                     <h2 class='d-inline'>BOOK LIST</h2>
