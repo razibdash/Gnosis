@@ -13,9 +13,11 @@
      <link rel="stylesheet" href="./css/style.css">
 
   </head>
+  <?php 
+     require_once("config/configer.php");
+    ?>
   <body>
     <?php 
-     $connect=mysqli_connect('localhost','root','','library');
      $query="SELECT * FROM `student_login_info`";
  
      $data_sharing=mysqli_query($connect,$query);
@@ -32,18 +34,18 @@
      }
     
     ?>
-    <div class="header">
+    <section>
               
                <div class="admin-section">
                   <div class="container-fluid">
                     <div class="row">
-                     <div class="col-md-2 p-0">
+                     <div class="col-md-2 col-xxl-2 col-lg-2 p-0">
                 <?php 
                 require_once("side_bar.php");
                 
                 ?>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 col-xxl-10 col-lg-10  p-3 mb-auto d-flex justify-content-center ">
             <div class="student-info-table">
                     <h2>BOOK REQUEST</h2>
                     <div class="container mt-3">  
@@ -64,6 +66,7 @@
                             <th>Action</th>
                         </tr>
                         </thead>
+                        <tbody>
                     <?php
                     $count=0;
                         while($row=mysqli_fetch_assoc($data_sharing))
@@ -75,7 +78,7 @@
                             $request_date=$row['request_date'];
                             $count++;
                             ?>
-                            <tbody>
+                            
                         <tr>
                         <td><?php echo $count?></td>
                            
@@ -88,10 +91,11 @@
                             <?php        
                             ?>
                         </tr>
-                </tbody>
+                
         <?php    
     }  
-           ?>        
+           ?>  
+           </tbody>      
                     </table>
 
 

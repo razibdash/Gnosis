@@ -15,31 +15,32 @@
      <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div class="header">
+<?php 
+     require_once("config/configer.php");
+    ?>
+  <section>
       <div class="container-fluid">
          <div class="admin-section">
          <div class="row">
-              <div class="col-md-2 p-0">
+              <div class="col-md-2 col-xxl-2 col-lg-2  p-0">
                   <?php
                    require_once("side_bar.php");
                   ?>
               </div>
-              <div class="col-md-10 p-3">
+              <div class="col-md-10 col-xxl-10 col-lg-10  mb-auto p-3 d-flex justify-content-center">
                  <div class="student-info-table">
                  <div class="student">
                     <h2 class='d-inline'>BOOK LIST</h2>
                     <div class="input-group search-bar">
-  <input type="search" class="form-control " placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-  <span class="input-group-text border-0" id="search-addon">
-    <i class="fas fa-search"></i>
-  </span>
-</div> 
-                      <a href="add-new-book.php"><h2 class='add-title float-right'>Add New Book <i class="bi bi-plus-circle-dotted"></i></h2></a>
+                      <input type="search" class="form-control " placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                      <span  class="input-group-text border-0" id="search-addon">
+                        <i class="fas fa-search"></i>
+                      </span>
+                    </div> 
                     </div>
                     <div class="container mt-3"> 
-
+              
                     <?php 
-    $connect=mysqli_connect('localhost','root','','library');
     $query="SELECT * FROM `add_book`";
 
     $data_sharing=mysqli_query($connect,$query);
@@ -48,13 +49,14 @@
     <thead>
     <tr>
         <th>Serial No</th>
-        <th>Book Name</th>
         <th>Book Picture</th>
+        <th>Book Name</th>
         <th>Author</th>
         <th>Book Details</th>
         <th>Action</th>
     </tr>
     </thead>
+    <tbody>
 <?php
    $count=0;
     while($row=mysqli_fetch_assoc($data_sharing))
@@ -67,12 +69,11 @@
         $bookDetail=$row['book-Detail'];
         $count++;
         ?>
-        <tbody>
+       
                         <tr>
-                        <td><?php echo $count?></td>
-                           
+                        <td class='serial'><?php echo $count?></td>
+                            <td><img class='book-img' src="image/book/<?php echo $picture?>" alt="book not found"></td>
                             <td><?php echo $bookName?></td>
-                            <td><?php echo $picture?></td>
                             <td><?php echo $author?></td>
                             <td><?php echo $bookDetail?></td>
                            
@@ -82,10 +83,11 @@
                             
                             ?>
                         </tr>
-                </tbody>
+                
  <?php    
     }  
-    ?>        
+    ?>    
+    </tbody>    
                   </table>
                     </div>
                  </div>

@@ -15,37 +15,22 @@
   </head>
   <body>
     <?php 
-     $connect=mysqli_connect('localhost','root','','library');
-     $query="SELECT * FROM `student_login_info`";
- 
-     $data_sharing=mysqli_query($connect,$query);
-     $count=0;
-     while($row=mysqli_fetch_assoc($data_sharing))
-     {
-         $id=$row['id'];
-         $first=$row['firstName'];
-         $last_name=$row['lastName'];
-         $email=$row['email'];
-         $pass=$row['password'];
-         $number=$row['number'];
-         $count++;
-     }
-    
+     require_once("config/configer.php");
     ?>
-    <div class="header">
+    <section >
         <div class="container-fluid">
         
            <div class="admin-section">
                <div class="row " >
-                  <div class="col-md-2 p-0">
+                  <div class="col-md-2 col-xxl-2 col-lg-2  p-0">
                    <?php
                    require_once("side-bar-student.php");
                    ?>
                  </div>
-                <div class="col-md-10">
+                <div class="col-md-10 col-xxl-10 col-lg-10 ">
                     <div class="row">
                    
-                      <div class="col-md-4">
+                      <div class="col-md-4 col-xxl-4 col-lg-4 ">
                         <div class="card-body book-count">
                        <h4 class="icon"> <i class="fa-solid fa-book icon-dada"></i></h4>
                          <div class="card-text">
@@ -58,7 +43,7 @@
                          </div>
                         </div>
                       </div>
-                      <div class="col-md-4">
+                      <div class="col-md-4 col-xxl-4 col-lg-4 ">
                         <div class="card-body student-count">
                        <h4 class="icon"> <i class="fa-solid fa-graduation-cap icon-dada"></i></h4>
                           <div class="card-text">
@@ -71,7 +56,7 @@
                          </div>
                         </div>
                       </div>
-                      <div class="col-md-4">
+                      <div class="col-md-4 col-xxl-4 col-lg-4 ">
                         <div class="card-body issue-book-count">
                           <h4 class="icon"><i class="fa-solid fa-triangle-exclamation"></i></h4>
                          <div class="card-text">
@@ -87,18 +72,11 @@
                     </div>
   
                       </div>
-                      <div class="row">
-                      <div class="col-md-12">
-                        <div class="graph">
-                          <img src="./image/graph.jpg" alt="">
-                        </div>
-                      </div>
-                    </div>
                    
                     </div>
                 </div>
             </div>
-           </div>
+           </section>
                     </div>
                    
                     </div>

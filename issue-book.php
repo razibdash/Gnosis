@@ -14,23 +14,24 @@
 
   </head>
   <body>
-  
+  <?php 
+     require_once("config/configer.php");
+    ?>
    
-    <div class="header">
+    <section>
         <div class="container-fluid">
            <div class="admin-section">
            <div class="row">
-                <div class="col-md-2 p-0">
+                <div class="col-md-2 col-xxl-2 col-lg-2 p-0">
                 <?php
                    require_once("side_bar.php");
                   ?>
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-10 col-xxl-10 col-lg-10  p-3 mb-auto d-flex justify-content-center ">
                  <div class="student-info-table">
                     <h2>ISSUE BOOK</h2>
                     <div class="container mt-3">  
                     <?php 
-    $connect=mysqli_connect('localhost','root','','library');
     $query="SELECT * FROM `student-issue-book`";
 
     $data_sharing=mysqli_query($connect,$query);
@@ -45,7 +46,7 @@
         <th>Issue Date</th>
         <th>Action</th>
     </tr>
-    </thead>
+    </thead> <tbody>
 <?php
    $count=0;
     while($row=mysqli_fetch_assoc($data_sharing))
@@ -57,7 +58,7 @@
         $issueDate=$row['isuue_date'];
         $count++;
         ?>
-        <tbody>
+       
                         <tr>
                         <td><?php echo $count?></td>
                            
@@ -68,13 +69,13 @@
                             <td><a href="">Dlete</a></td>
         
                         </tr>
-                </tbody>
+                
  <?php    
     }
     
     
     
-    ?>        
+    ?>     </tbody>   
                     </table>
                     </div>
                  </div>

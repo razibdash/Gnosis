@@ -21,7 +21,7 @@
 <div class="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-2 col-xxl-2 col-lg-2 ">
                     <div class="logo">
                     <a href="home.php"><span><i class="fa-solid fa-book"></i>LMS</span></a>
                     </div>

@@ -5,7 +5,6 @@ if(isset($_REQUEST['admin']))
 
 
 
-    //$connection=mysqli_connect('localhost','root','','library');
       $query="SELECT * FROM `admin`";
       $data_adan=mysqli_query($connect,$query);
       while($row=mysqli_fetch_assoc($data_adan))
@@ -14,7 +13,7 @@ if(isset($_REQUEST['admin']))
           $eamil_admin=$row['email'];
           $pass_admin=$row['password'];
          
-      
+        }
      if(isset($_REQUEST['submit']))
      {
         $email=$_REQUEST['email'];
@@ -22,7 +21,7 @@ if(isset($_REQUEST['admin']))
         if($eamil_admin==$email && $pass_admin==$pass)
         {
             //header("Location:adminDashboard.php");
-            echo '<script>window.location.href="../adminDashboard.php"</script>';
+            echo '<script>window.location.href="../adminDashboard.php?adDashboard=true&&26474"</script>';
         }else
         {
             echo '<script>window.location.href="../home.php?adminError=checkout"</script>';
@@ -30,6 +29,6 @@ if(isset($_REQUEST['admin']))
 
      }
      
-    }
+    
 }
 ?>

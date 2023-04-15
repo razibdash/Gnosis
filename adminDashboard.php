@@ -17,20 +17,20 @@
     <?php 
      require_once("config/configer.php");
     ?>
-    <div class="header">
+    <section >
         <div class="container-fluid">
         
            <div class="admin-section">
            <div class="row " >
-                <div class="col-md-2 p-0">
+                <div class="col-md-2 col-xxl-2 col-lg-2  p-0">
                 <?php
                    require_once("side_bar.php");
                   ?>
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-10 col-xxl-10 col-lg-10 ">
                     <div class="row">
                    
-                      <div class="col-md-4">
+                      <div class="col-md-4 col-xxl-4 col-lg-4 ">
                         <div class="card-body book-count">
                        <h4 class="icon"> <i class="fa-solid fa-book icon-dada"></i></h4>
                          <div class="card-text">
@@ -43,7 +43,7 @@
                          </div>
                         </div>
                       </div>
-                      <div class="col-md-4">
+                      <div class="col-md-4 col-xxl-4 col-lg-4">
                         <div class="card-body student-count">
                        <h4 class="icon"> <i class="fa-solid fa-graduation-cap icon-dada"></i></h4>
                           <div class="card-text">
@@ -56,7 +56,7 @@
                          </div>
                         </div>
                       </div>
-                      <div class="col-md-4">
+                      <div class="col-md-4 col-xxl-4 col-lg-4">
                         <div class="card-body issue-book-count">
                           <h4 class="icon"><i class="fa-solid fa-triangle-exclamation"></i></h4>
                          <div class="card-text">
@@ -71,7 +71,7 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-md-4">
+                      <div class="col-md-4 col-xxl-4 col-lg-4">
                         <div class="card-body book-count">
                        <h4 class="icon-4"> <i class="fa-solid fa-book-open-reader"></i></h4>
                        <h4 class='count book_rrr'><?php 
@@ -82,13 +82,13 @@
                         <h4 class="book-request">BOOK REQUEST</h4>
                         </div>
                       </div>
-                      <div class="col-md-4">
+                      <div class="col-md-4 col-xxl-4 col-lg-4">
                         <div class="card-body student-count">
                           <h4 class="icon-5"><i class="fa-solid fa-bookmark"></i></h4>
                           <h4 class="return-book">RETURN BOOKS</h4>
                         </div>
                       </div>
-                      <div class="col-md-4">
+                      <div class="col-md-4 col-xxl-4 col-lg-4">
                         <div class="card-body student-count">
                           <h4 class="icon-5"><i class="fa-solid fa-bookmark"></i></h4>
                           <h4 class="return-book">RETURN BOOKS</h4>
@@ -96,7 +96,7 @@
                       </div>
                       </div>
                       <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-12 col-xxl-12 col-lg-12">
                         <div class="graph">
                           <img src="./image/gr" alt="">
                         </div>
@@ -108,7 +108,7 @@
             </div>
            </div>
         
-        </div>
+        </section>
     </div>
       
     <!-- Optional JavaScript -->

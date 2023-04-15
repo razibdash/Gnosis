@@ -30,23 +30,30 @@
 
 </head>
 <body>
-  <div class="header">
+<?php 
+     require_once("config/configer.php");
+    ?>
+  <section>
     <div class="container-fluid">
       <div class="admin-section">
        
             <div class="row">
-                <div class="col-md-2 p-0">
+                <div class="col-md-2 col-xxl-2 col-lg-2  p-0">
                <?php
                 require_once("side_bar.php");
                ?>
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-10 col-xxl-10 col-lg-10  p-3 mb-auto d-flex justify-content-center">
                 <div class="student-info-table">
                     <h2>RETURN BOOKS</h2>
                     <div class="container mt-3">  
                     <?php 
+<<<<<<< HEAD
     $connect=mysqli_connect('localhost','root','','library');
     $query="SELECT * FROM `return_books`";
+=======
+    $query="SELECT * FROM `student_login_info`";
+>>>>>>> 23eeb2f24a4584ed3fe76fd1c29fe038b06f49cf
 
     $data_sharing=mysqli_query($connect,$query);
     ?>
