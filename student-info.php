@@ -26,7 +26,7 @@ if(!isset($_REQUEST['26474']) || $_REQUEST['sinfoAdmin']!='true' )
 
 
 </head>
-<?php require_once("../config/configer.php"); ?>
+
 <body>
   <section>
     <div class="container-fluid">
@@ -65,6 +65,7 @@ if(!isset($_REQUEST['26474']) || $_REQUEST['sinfoAdmin']!='true' )
     </thead>
     <tbody>
 <?php
+    require_once("../config/configer.php");
    $count=0;
    $query="SELECT * FROM `student_login_info`";
 

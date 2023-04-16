@@ -15,9 +15,6 @@
      <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<?php 
-     require_once("config/configer.php");
-    ?>
   <section>
       <div class="container-fluid">
          <div class="admin-section">
@@ -41,6 +38,7 @@
                     <div class="container mt-3"> 
 
                     <?php 
+                    require_once("config/configer.php");
     $query="SELECT * FROM `add_book`";
 
     $data_sharing=mysqli_query($connect,$query);
