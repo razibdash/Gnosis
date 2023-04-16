@@ -38,23 +38,23 @@
                     <div class="container mt-3"> 
 
                     <?php 
-                    require_once("config/configer.php");
-    $query="SELECT * FROM `add_book`";
+                    $connect=mysqli_connect('localhost','root','','library');
+                $query="SELECT * FROM `add_book`";
 
-    $data_sharing=mysqli_query($connect,$query);
-    ?>
-    <table class="table table-hover">
-    <thead>
-    <tr>
-        <th>Serial No</th>
-        <th>Book Picture</th>
-        <th>Book Name</th>
-        <th>Author</th>
-        <th>Book Details</th>
-    </tr>
-    </thead>
-    <tbody>
-<?php
+                $data_sharing=mysqli_query($connect,$query);
+                ?>
+                <table class="table table-hover">
+                <thead>
+                <tr>
+                <th>Serial No</th>
+                <th>Book Picture</th>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Book Details</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                <?php
    $count=0;
     while($row=mysqli_fetch_assoc($data_sharing))
     {
@@ -92,7 +92,7 @@
         
         </div>
     </div>
-
+  </section>
    
       
     <!-- Optional JavaScript -->
