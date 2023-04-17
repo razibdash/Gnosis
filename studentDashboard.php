@@ -47,8 +47,8 @@
                         <div class="card-body student-count">
                        <h4 class="icon"> <i class="fa-solid fa-graduation-cap icon-dada"></i></h4>
                           <div class="card-text">
-                         <h4 class='count'><?php 
-                          $q="SELECT COUNT(*) FROM student_login_info";
+                          <h4 class='count book_rrr'><?php 
+                          $q="SELECT COUNT(*) FROM `student_book_request`";
                           $cnt=mysqli_fetch_assoc(mysqli_query($connect,$q));
                                echo $cnt['COUNT(*)'];
                           ?></h4>

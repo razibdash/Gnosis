@@ -304,3 +304,14 @@ h4.book-request {
 .s-image img {
   border-radius: 15px;
 }
+
+/*login part*/
+input#uname {
+  border-radius: 30px;
+  box-shadow: 0px 2px 1px brown;
+}
+input#pwd {
+  border-radius: 30px;
+  box-shadow: 0px 2px 0px;
+}
+/*login Part END*/
