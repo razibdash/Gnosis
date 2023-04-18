@@ -26,7 +26,7 @@ if(!isset($_REQUEST['26474']) || $_REQUEST['sinfoAdmin']!='true' )
 
 
 </head>
-<?php require_once("../config/configer.php"); ?>
+
 <body>
   <section>
     <div class="container-fluid">
@@ -42,12 +42,14 @@ if(!isset($_REQUEST['26474']) || $_REQUEST['sinfoAdmin']!='true' )
                 <div class="student-info-table">
                     <div class="student">
                     <h2 class='d-inline'>STUDENT INFO</h2>
-                    <div class="input-group search-bar">
-                      <input type="search" class="form-control " placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                     <form action="php_core/search_student.php" method="post">
+                     <div class="input-group search-bar">
+                      <input type="search" class="form-control " name="Search" placeholder="Search" aria-label="Search" aria-describedby="search-addon" required />
                       <span style='background: none;' class="input-group-text border-0" id="search-addon">
-                        <i class="fas fa-search"></i>
+                      <input type="submit" value="search" name="s" class="btn btn-primary"  id="">
                       </span>
                     </div> 
+                     </form>
                     </div>
                     <div class="container mt-3">  
     <table class="table table-hover">
@@ -65,6 +67,7 @@ if(!isset($_REQUEST['26474']) || $_REQUEST['sinfoAdmin']!='true' )
     </thead>
     <tbody>
 <?php
+   $connect=mysqli_connect('localhost','root','','library');
    $count=0;
    $query="SELECT * FROM `student_login_info`";
 
@@ -88,7 +91,7 @@ if(!isset($_REQUEST['26474']) || $_REQUEST['sinfoAdmin']!='true' )
                             <td><?php echo $email?></td>
                             <td><?php echo $pass?></td>
                             <td><?php echo $number?></td>
-                            <td><a href="php_core\student_delete_core.php?id=<?php echo $id ?>">Delete</a></td>
+                            <td><a href="#">Edit || </a><a href="php_core\student_delete_core.php?id=<?php echo $id ?>"> Delete</a></td>
                             <?php 
                            
                             
