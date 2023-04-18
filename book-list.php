@@ -1,7 +1,7 @@
 <?php 
 if(!isset($_REQUEST['26474']) || $_REQUEST['bookList']!='true' )
 {
-  //header("Location: book-list.php?bookList=true&&26474");
+  header("Location: book-list.php?bookList=true&&26474");
   //echo '<script>window.location.href="admin-login.php"</script>';
 }
 
@@ -33,7 +33,76 @@ if(!isset($_REQUEST['26474']) || $_REQUEST['bookList']!='true' )
       <div class="container-fluid">
          <div class="admin-section">
           <div class="row">
+          <div class="col-md-2 col-xxl-2 col-lg-2 p-0">
+                  <?php
+                   require_once("side_bar.php");
+                  ?>
+              </div>
+              <div class="col-md-10 col-xxl-10 col-lg-10  p-3 mb-auto d-flex justify-content-center ">
+                 <div class="student-info-table">
+                 <div class="student">
+                    <h2 class='d-inline'>BOOK LIST</h2>
+                    <div class="input-group search-bar">
+                      <input type="search" class="form-control " placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                      <span  class="input-group-text border-0" id="search-addon">
+                        <i class="fas fa-search"></i>
+                      </span>
+                    </div> 
+                    </div>
+                    <div class="container mt-3"> 
 
+                    <?php 
+                    $connect=mysqli_connect('localhost','root','','library');
+                $query="SELECT * FROM `add_book`";
+
+                $data_sharing=mysqli_query($connect,$query);
+                ?>
+                <table class="table table-hover">
+                <thead>
+                <tr>
+                <th>Serial No</th>
+                <th>Book Picture</th>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Book Details</th>
+                <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                <?php
+   $count=0;
+    while($row=mysqli_fetch_assoc($data_sharing))
+    {
+        
+        $id=$row['id'];
+        $bookName=$row['book_name'];
+        $picture=$row['book_picture'];
+        $author=$row['author'];
+        $bookDetail=$row['book-Detail'];
+        $count++;
+        ?>
+       
+                        <tr>
+                        <td class='serial'><?php echo $count?></td>
+                            <td><img class='book-img' src="image/book/<?php echo $picture?>" alt="book not found"></td>
+                            <td><?php echo $bookName?></td>
+                            <td><?php echo $author?></td>
+                            <td><?php echo $bookDetail?></td>
+                            <td><a href="">Edit || </a><a href="?id=<?php echo $id ?>">Delete</a></td>
+                            <?php 
+                           
+                            
+                            ?>
+                        </tr>
+                
+ <?php    
+    }  
+    ?>    
+    </tbody>    
+                  </table>
+                    </div>
+                 </div>
+              </div>
           </div>
         </div>
       </div>
