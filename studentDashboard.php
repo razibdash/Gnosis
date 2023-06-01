@@ -22,7 +22,7 @@
         
            <div class="admin-section">
                <div class="row " >
-                  <div class="col-md-2 col-xxl-2 col-lg-2  p-0">
+                  <div class="col-md-2 col-xxl-2 col-sm-2 col-lg-2  p-0">
                    <?php
                    require_once("side-bar-student.php");
                    ?>
@@ -56,7 +56,7 @@
                          </div>
                         </div>
                       </div>
-                      <div class="col-md-4 col-xxl-4 col-lg-4 ">
+                      <div class="col-md-4 col-xxl-4 col-sm-4 col-lg-4 ">
                         <div class="card-body issue-book-count">
                           <h4 class="icon"><i class="fa-solid fa-triangle-exclamation"></i></h4>
                          <div class="card-text">
@@ -69,7 +69,7 @@
                          </div>
                         </div>
                       </div>
-              <div class="col-md-12 col-xxl-12 col-lg-12  mb-auto p-3 d-flex justify-content-center">
+              <div class="col-md-12 col-xxl-12 col-lg-12 col-sm-12 mb-auto p-3 d-flex justify-content-center">
                  <div class="student-info-table">
                  <div class="student">
                     <h2 class='d-inline'>BOOK LIST</h2>
